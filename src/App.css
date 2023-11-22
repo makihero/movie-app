@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+/* Establecer estilos globales para el cuerpo del documento */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #141414;
+  color: #fff;
+}
+
+/* Estilos para los títulos h2 */
+h2 {
+  color: #45c865;
+  font-size: 20px;
+}
+
+/* Estilos para los párrafos */
+p {
+  font-size: 14px;
+  font-weight: bold;
+  color: #d2d2d2;
+  letter-spacing: .5px;
+}
+
+/* Estilos comunes para h2 y p */
+h2, p {
+  text-align: center;
+  padding: 0 10px 0 10px;
+}
+
+/* Estilos para el contenedor principal de la aplicación */
+.app {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+/* Estilos para la sección de búsqueda y filtros */
+.buscar {
+  display: flex;
+  min-width: 100%;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Estilos para las tarjetas de películas */
+.card {
+  background-color: #333;
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 20px 0;
+  width: 250px;
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px 8px 0 0;
+}
+
+.card-content {
+  padding: 15px;
+}
+
+/* Estilos para la paginación */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.pagination button {
+  padding: 10px 15px;
+  font-size: 16px;
+  margin: 0 5px;
+  cursor: pointer;
+  background-color: #e50914;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+
+.pagination button:disabled {
+  background-color: #555;
+  cursor: not-allowed;
+}
+
+/* Estilos para la sección de búsqueda y filtros */
+.search,
+.filter {
+  margin-bottom: 20px;
+}
+
+/* Estilos para los campos de entrada y select en la sección de búsqueda y filtros */
+.search input,
+.filter select {
+  padding: 10px;
+  font-size: 16px;
+  margin-right: 10px;
+  background-color: rgba(109, 109, 110, 0.7);
+  border: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+/* Estilos para el hover del campo de entrada */
+input:hover {
+  background-color: rgba(171, 171, 171, 0.7);
+}
+
+/* Estilos para el foco del campo de entrada */
+input:focus {
+  outline: none;
+}
+
+/* Estilos para los botones en la sección de búsqueda y filtros */
+.search button,
+.filter button {
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #e50914;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+
+/* Estilos básicos para la barra de desplazamiento */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #4CAF50;
+  border-radius: 6px; 
+}
+
+::-webkit-scrollbar-track {
+  background-color: #555;
+}
